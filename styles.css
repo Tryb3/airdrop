@@ -5,6 +5,11 @@ body {
 }
 
 header {
+    max-width: 1000px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: #333;
+    padding: 5px 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,16 +170,13 @@ button.discover-btn:hover {
 /* middle divisin that contains the numbers */
 
 .numbers {
-    max-width: 1000px;
-    margin: 50px auto;
-    border-radius: 10px;
+    max-width: 800px;
+    margin: 0px auto;
     box-shadow: #333;
-    padding: 65px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 0px 0px;
     
 }
 
@@ -222,29 +224,36 @@ footer {
 }
 
 .footer-content {
-    margin-top: 20px;
+    max-width: 1000px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: #333;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    /* align-items: ; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .footer-content h3 {
     font-size: 18px;
+    padding: 2px;
 }
 
 .footer-content ul {
     list-style-type: none;
-    padding: 0;
+    padding: 2px;
 }
 
 .footer-content li {
-    margin-bottom: 5px;
+    margin: 5px;
+    padding: 2px;
 }
 
 .footer-content a {
     text-decoration: none;
     color: white;
+    align-content: center;
+    max-width: auto;
 }
 
 .copyright-section {
@@ -261,3 +270,64 @@ footer {
     color: #4CAF50; /* Add your preferred link color */
 }
 
+/* Existing styles for larger screens */
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens with a maximum width of 600px or less */
+
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button.connect-wallet-btn {
+        margin-top: 10px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .info-div h2 {
+        font-size: 20px;
+    }
+
+    .info-div p {
+        font-size: 14px;
+    }
+
+    button.discover-btn {
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-content div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-content ul {
+        padding-left: 15px;
+    }
+
+    .footer-content h3 {
+        font-size: 18px;
+    }
+}
