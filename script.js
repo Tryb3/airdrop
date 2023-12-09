@@ -1,6 +1,6 @@
 function discoverNow() {
     // Add JavaScript logic for the "Discover Now" button
-    alert("Discover Now button clicked!");
+    alert("connect wallet first");
     // You can redirect the user or perform other actions as needed
 }
 

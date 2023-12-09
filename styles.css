@@ -20,6 +20,52 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.navbar{
+    background-color:transparent;
+    color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li{
+    margin-right: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333 ;
+    font-weight: bold;
+
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-list{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-list li{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
 .logo img {
     max-width: 100px;
 }
@@ -72,7 +118,7 @@ nav a {
     display: block;
 }
 
-button.connect-wallet-btn {
+button.interact-button {
     margin-left:15px;
     padding: 10px;
     cursor: pointer;
@@ -83,7 +129,7 @@ button.connect-wallet-btn {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-button.connect-wallet-btn:hover {
+button.interact-button:hover {
     background-color: #45a049; /* Add your preferred hover color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     outline: 1px solid #181f19;
@@ -147,7 +193,7 @@ button.connect-wallet-btn:hover {
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Geneva, Tahoma, sans-serif 'Franklin Gothic vMedium', 'Arial Narrow', Arial, sans-serif, Geneva, Tahoma, sans-serif; */
 }
 
-button.discover-btn {
+button#discover-btn {
     padding: 15px 30px;
     cursor: pointer;
     border: none;
@@ -160,8 +206,8 @@ button.discover-btn {
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
 
-button.discover-btn:hover {
-    background:linear-gradient (#d26d6d, #2980b9); /* Add your preferred hover color */
+button#discover-btn:hover {
+    background:linear-gradient (#d26d6d, #0e6ead); /* Add your preferred hover color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     outline: 1px solid #5e5959;
     outline-offset: 2px 200ms;
@@ -177,6 +223,8 @@ button.discover-btn:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0px 0px;
+    font-size: larger;
+    font-style: inherit;
     
 }
 
@@ -272,7 +320,7 @@ footer {
 
 /* Existing styles for larger screens */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     /* Styles for screens with a maximum width of 600px or less */
 
     header {
