@@ -216,16 +216,24 @@ button#discover-btn:hover {
 /* middle divisin that contains the numbers */
 
 .numbers {
-    max-width: 800px;
-    margin: 0px auto;
+    max-width: 600px;
+    margin: 10px auto;
     box-shadow: #333;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 0px;
-    font-size: larger;
+    padding: 4% 10%;
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: inherit;
+    font-weight: bolder;
+    text-shadow: #0e6ead;
     
+}
+
+#glowing-text {
+    color: #ae1616;
+
 }
 
 .user1{
@@ -257,6 +265,8 @@ button#discover-btn:hover {
     align-items: center;
     align-content: center;
     margin: 20px 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: bold;
     
     
 
